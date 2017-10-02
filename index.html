@@ -1,12 +1,65 @@
-<!-- Name: index.html -->
-<!-- Author: Sean Francis (spf3716@rit.edu) -->
-<!-- Desc: The main page for seanpfrancis.com and seanpfrancis.github.io -->
-<head>
+<!DOCTYPE html>
+<html>
 <title>Sean Francis</title>
-</head>
-<center><h1>This page is currently under construction.</h1> Click <a href="https://www.linkedin.com/in/seanpfrancis/">
-here</a> to view my LinkedIn profile.
-<br>
-<img style="height:65%" src="media/underconstruction.gif">
-<br>
-<small>Sean Francis <a href="mailto:spf3716@rit.edu">spf3716@rit.edu</a>.</small></center>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/font.css">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript">
+window.onload = choosePic;
+function choosePic(){
+s = "url('./media/webbg" + Math.floor(Math.random() * 7)   + ".jpg')"
+$(".bgimg").css("background-image", s);
+}
+</script>
+<style>
+body,h1 {font-family: "Raleway", sans-serif; text-align: center;}
+body, html {height: 100%}
+.bgimg {
+    min-height: 100%;
+    background-color: #737373;
+    background-position: center;
+    background-size: cover;
+}
+.ico {
+  max-width: 20%;
+  min-width:75px;
+}
+a {
+ 	text-decoration: none;
+ }
+a img {    
+  padding-left:.6em;
+  padding-right:.6em;
+  -webkit-transition: all 0.25s linear;
+  -moz-transition: all 0.25s linear;
+  -ms-transition: all 0.25s linear;
+  -o-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+}
+a:hover img {
+    -webkit-filter: brightness(80%);
+  -moz-filter: brightness(80%);
+  -o-filter: brightness(80%);
+  -ms-filter: brightness(80%);
+  filter: brightness(80%);
+            
+}
+</style>
+<body>
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+  <div class="w3-display-topleft w3-padding-large w3-xlarge">
+    <a href="">Sean Francis</a>
+  </div>
+  <div class="w3-display-middle">
+    <h1 class="w3-jumbo w3-animate-top">COMING SOON</h1>
+    <hr class="w3-border-white" style="margin:auto;width:70%">
+    <p class="w3-large w3-center w3-animate-opacity"><a href="https://www.linkedin.com/in/seanpfrancis/"><img class="ico" src="media/li.png"></a>
+    <a href="https://github.com/seanpfrancis"><img class="ico" src="media/git.png"></a>
+    <a href="mailto:spf3716@rit.edu"><img class="ico" src="media/mail.png"></a></p>
+  </div>
+</div>
+
+</body>
+</html>
