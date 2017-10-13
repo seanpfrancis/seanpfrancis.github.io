@@ -1,0 +1,32 @@
+body,h1 {font-family: "Raleway", sans-serif; text-align: center;}
+body, html {height: 100%}
+.bgimg {
+    min-height: 100%;
+    background-color: #737373;
+    background-position: center;
+    background-size: cover;
+}
+.ico {
+  max-width: 13%;
+  min-width:75px;
+}
+a {
+ 	text-decoration: none;
+ }
+a img {    
+  padding-left:.7em;
+  padding-right:.7em;
+  -webkit-transition: all 0.25s linear;
+  -moz-transition: all 0.25s linear;
+  -ms-transition: all 0.25s linear;
+  -o-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+}
+a:hover img {
+    -webkit-filter: brightness(80%);
+  -moz-filter: brightness(80%);
+  -o-filter: brightness(80%);
+  -ms-filter: brightness(80%);
+  filter: brightness(80%);
+            
+}
