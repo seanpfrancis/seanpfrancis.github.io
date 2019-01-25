@@ -1,3 +1,5 @@
+RewriteRule ^(Pages) - [L]
 RewriteEngine on
-
-RewriteRule ^(.*)$ https://www.seanpfrancis.com/ [R=permanent,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /index.html?path=$1 [NC,L,QSA]
